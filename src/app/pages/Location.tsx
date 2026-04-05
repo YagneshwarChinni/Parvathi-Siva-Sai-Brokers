@@ -15,35 +15,33 @@ export default function Location() {
       <Header language={language} setLanguage={setLanguage} translations={translations} />
 
       {/* Location Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden" style={{
+      <section className="relative py-14 sm:py-20 px-4 overflow-hidden" style={{
         backgroundImage: `linear-gradient(rgba(27, 94, 32, 0.95), rgba(46, 125, 50, 0.95)), url('https://images.unsplash.com/photo-1626475847607-64715e771242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMGZhcm1pbmclMjBncmFpbnN8ZW58MXx8fHwxNzc1MzgwNTM5fDA&ixlib=rb-4.1.0&q=80&w=1080')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundPosition: 'center'
       }}>
         <div className="max-w-5xl mx-auto text-center text-white relative z-10">
-          <h1 style={{
-            fontSize: '4rem',
-            marginBottom: '1.5rem',
-            animation: 'fadeInUp 1s ease-out'
-          }}>
+          <h1
+            className="text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6 animate-fade-in leading-tight"
+            style={{ animation: 'fadeInUp 1s ease-out' }}
+          >
             {t.locationTitle}
           </h1>
-          <div className="w-32 h-1 bg-white/50 mx-auto rounded-full mb-6"></div>
-          <p className="text-xl">
+          <div className="w-24 sm:w-32 h-1 bg-white/50 mx-auto rounded-full mb-4 sm:mb-6"></div>
+          <p className="text-base sm:text-lg lg:text-xl px-2 sm:px-0">
             2PWP+3M6, Vinukonda, Andhra Pradesh, India
           </p>
         </div>
       </section>
 
       {/* Map Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-12 sm:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ border: '4px solid #43A047' }}>
+          <div className="rounded-xl sm:rounded-3xl overflow-hidden shadow-2xl" style={{ border: '3px solid #43A047' }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.897!2d79.73!3d16.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDAzJzAwLjAiTiA3OcKwNDMnNDguMCJF!5e0!3m2!1sen!2sin!4v1234567890"
               width="100%"
-              height="500"
+              className="h-[320px] sm:h-[420px] lg:h-[500px]"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
@@ -55,18 +53,18 @@ export default function Location() {
       </section>
 
       {/* Location Details */}
-      <section className="py-16 px-4" style={{ backgroundColor: '#F1F8E9' }}>
+      <section className="py-12 sm:py-16 px-4" style={{ backgroundColor: '#F1F8E9' }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Address Card */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ backgroundColor: '#C8E6C9' }}>
-                <MapPin style={{ color: '#1B5E20' }} size={32} />
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full mx-auto mb-5 sm:mb-6 flex items-center justify-center" style={{ backgroundColor: '#C8E6C9' }}>
+                <MapPin style={{ color: '#1B5E20' }} size={28} />
               </div>
-              <h3 className="text-center mb-4" style={{ color: '#1B5E20', fontSize: '1.5rem' }}>
+              <h3 className="text-center mb-4 text-xl sm:text-2xl" style={{ color: '#1B5E20' }}>
                 {t.officeAddress}
               </h3>
-              <p className="text-center text-gray-700 text-lg">
+              <p className="text-center text-gray-700 text-base sm:text-lg break-words">
                 2PWP+3M6, Vinukonda<br />
                 Andhra Pradesh<br />
                 India
@@ -74,14 +72,14 @@ export default function Location() {
             </div>
 
             {/* Contact Card */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ backgroundColor: '#A5D6A7' }}>
-                <Phone style={{ color: '#1B5E20' }} size={32} />
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full mx-auto mb-5 sm:mb-6 flex items-center justify-center" style={{ backgroundColor: '#A5D6A7' }}>
+                <Phone style={{ color: '#1B5E20' }} size={28} />
               </div>
-              <h3 className="text-center mb-4" style={{ color: '#1B5E20', fontSize: '1.5rem' }}>
+              <h3 className="text-center mb-4 text-xl sm:text-2xl" style={{ color: '#1B5E20' }}>
                 {t.contactNumbers}
               </h3>
-              <div className="text-center text-gray-700">
+              <div className="text-center text-gray-700 text-base sm:text-lg">
                 <p className="mb-2">
                   <strong>{t.cell}:</strong><br />
                   <a href="tel:9440171005" className="text-green-700 hover:text-green-900">9440171005</a><br />
@@ -95,14 +93,14 @@ export default function Location() {
             </div>
 
             {/* Hours Card */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ backgroundColor: '#81C784' }}>
-                <Clock style={{ color: '#1B5E20' }} size={32} />
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full mx-auto mb-5 sm:mb-6 flex items-center justify-center" style={{ backgroundColor: '#81C784' }}>
+                <Clock style={{ color: '#1B5E20' }} size={28} />
               </div>
-              <h3 className="text-center mb-4" style={{ color: '#1B5E20', fontSize: '1.5rem' }}>
+              <h3 className="text-center mb-4 text-xl sm:text-2xl" style={{ color: '#1B5E20' }}>
                 {language === 'en' ? 'Business Hours' : language === 'te' ? 'వ్యాపార సమయం' : 'व्यवसाय के घंटे'}
               </h3>
-              <div className="text-center text-gray-700">
+              <div className="text-center text-gray-700 text-base sm:text-lg">
                 <p className="mb-2">
                   <strong>{language === 'en' ? 'Monday - Saturday' : language === 'te' ? 'సోమవారం - శనివారం' : 'सोमवार - शनिवार'}:</strong><br />
                   9:00 AM - 6:00 PM
@@ -117,61 +115,14 @@ export default function Location() {
         </div>
       </section>
 
-      {/* Godown Locations */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 style={{ fontSize: '2.5rem', color: '#1B5E20', marginBottom: '1rem' }}>
-              {t.godownContacts}
-            </h2>
-            <div className="w-32 h-1 bg-green-700 mx-auto rounded-full"></div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Godown Contact 1 */}
-            <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg border-l-4 border-green-700">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full" style={{ backgroundColor: '#C8E6C9' }}>
-                  <Navigation style={{ color: '#1B5E20' }} size={24} />
-                </div>
-                <div>
-                  <h3 style={{ color: '#1B5E20', fontSize: '1.5rem', marginBottom: '0.5rem' }}>
-                    M.N.Rao
-                  </h3>
-                  <a href="tel:9416017400" className="text-green-700 hover:text-green-900 text-lg font-semibold">
-                    94160 17400
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Godown Contact 2 */}
-            <div className="bg-gradient-to-br from-white to-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-600">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full" style={{ backgroundColor: '#A5D6A7' }}>
-                  <Navigation style={{ color: '#1B5E20' }} size={24} />
-                </div>
-                <div>
-                  <h3 style={{ color: '#1B5E20', fontSize: '1.5rem', marginBottom: '0.5rem' }}>
-                    Giddalur Kishore
-                  </h3>
-                  <a href="tel:9473726776" className="text-green-700 hover:text-green-900 text-lg font-semibold">
-                    94737 26776
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Directions CTA */}
-      <section className="py-16 px-4" style={{ backgroundColor: '#F1F8E9' }}>
+      <section className="py-12 sm:py-16 px-4" style={{ backgroundColor: '#F1F8E9' }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 style={{ fontSize: '2.5rem', color: '#1B5E20', marginBottom: '1.5rem' }}>
+          <h2 className="text-3xl sm:text-4xl" style={{ color: '#1B5E20', marginBottom: '1.5rem' }}>
             {language === 'en' ? 'Visit Us Today' : language === 'te' ? 'ఈరోజే మమ్మల్ని సందర్శించండి' : 'आज ही हमसे मिलें'}
           </h2>
-          <p className="text-gray-700 text-lg mb-8">
+          <p className="text-gray-700 text-base sm:text-lg mb-8 px-1 sm:px-0">
             {language === 'en' 
               ? 'We welcome you to visit our office and discuss your pulse trading needs. Our team is ready to serve you with the best quality products and services.' 
               : language === 'te' 
@@ -183,7 +134,7 @@ export default function Location() {
               href="https://www.google.com/maps/dir/?api=1&destination=16.05,79.73"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-xl text-white transition-all hover:shadow-2xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-white transition-all hover:shadow-2xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
               style={{ backgroundColor: '#2E7D32' }}
             >
               <Navigation size={20} />
@@ -191,7 +142,7 @@ export default function Location() {
             </a>
             <a
               href="tel:9440171005"
-              className="px-8 py-4 rounded-xl text-white transition-all hover:shadow-2xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-white transition-all hover:shadow-2xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
               style={{ backgroundColor: '#43A047' }}
             >
               <Phone size={20} />
