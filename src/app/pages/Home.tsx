@@ -32,7 +32,7 @@ export default function Home() {
   }, [hasAnimated]);
 
   const animateCounters = () => {
-    const targets = { years: 20 };
+    const targets = { years: 35 };
     const duration = 2000;
     const steps = 60;
     const increment = duration / steps;
@@ -139,7 +139,7 @@ export default function Home() {
                   <div className="absolute inset-x-2 top-2 h-14 rounded-t-2xl bg-gradient-to-b from-white/20 to-transparent pointer-events-none"></div>
                   <div className="absolute inset-x-2 bottom-2 h-24 rounded-b-2xl bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                   <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-white rounded-2xl px-5 sm:px-8 py-3 sm:py-4 shadow-2xl" style={{ backgroundColor: '#43A047' }}>
-                    <p className="text-white text-sm sm:text-lg">20+ Years</p>
+                    <p className="text-white text-sm sm:text-lg">35+ Years</p>
                   </div>
                 </div>
               </div>

@@ -13,13 +13,13 @@ export default function Contact() {
 
   const godownManagers = [
     {
-      name: 'M.N.Rao',
-      phone: '94160 17400',
+      name: 'Maguluri Srinivas Rao',
+      phone: '96186 17820',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxpbmRpYW4lMjBidXNpbmVzc21hbnxlbnwwfHx8fDE2OTcwNDU1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
-      name: 'Giddalur Kishore',
-      phone: '94737 26776',
+      name: 'Gudipati Kishore',
+      phone: '94939 26798',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYW58ZW58MHx8fHwxNjk3MDQ1NTM1fDA&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ];
@@ -89,7 +89,7 @@ export default function Contact() {
                 <div className="pt-3 border-t border-gray-200">
                   <p className="text-gray-600 mb-1">{t.office}</p>
                   <a href="tel:08646274055" className="text-green-700 hover:text-green-900 text-lg sm:text-xl">
-                    08646 - 274055
+                    08646 - 274955
                   </a>
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default function Contact() {
             </motion.div>
           </div>
 
-          {/* Godown Contacts Section */}
+          {/* Employee Contacts Section */}
           <div className="mb-16">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -165,7 +165,7 @@ export default function Contact() {
                 </h2>
               </div>
               <p className="text-gray-600 text-base sm:text-xl">
-                {language === 'en' ? 'Our dedicated warehouse managers are here to assist you' : language === 'te' ? 'మా అంకిత గోడౌన్ మేనేజర్లు మీకు సహాయం చేయడానికి ఇక్కడ ఉన్నారు' : 'हमारे समर्पित गोदाम प्रबंधक आपकी सहायता के लिए यहां हैं'}
+                {language === 'en' ? 'Our dedicated employees are here to assist you' : language === 'te' ? 'మా అంకిత ఉద్యోగులు మీకు సహాయం చేయడానికి ఇక్కడ ఉన్నారు' : 'हमारे समर्पित कर्मचारी आपकी सहायता के लिए यहां हैं'}
               </p>
             </motion.div>
 

@@ -127,7 +127,7 @@ export default function About() {
               <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
                 <li className="flex items-start gap-3">
                   <span className="text-green-700 text-lg sm:text-xl">•</span>
-                  <span>{language === 'en' ? '20+ years of industry experience' : language === 'te' ? '20+ సంవత్సరాల పరిశ్రమ అనుభవం' : '20+ वर्षों का उद्योग अनुभव'}</span>
+                  <span>{language === 'en' ? '35+ years of excellence' : language === 'te' ? '35+ సంవత్సరాల అద్భుతమైన సేవ' : '35+ वर्षों की उत्कृष्टता'}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-700 text-lg sm:text-xl">•</span>
