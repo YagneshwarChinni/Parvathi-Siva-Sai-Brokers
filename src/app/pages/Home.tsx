@@ -127,15 +127,17 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Proprietor Image */}
-            <div className="flex justify-center">
-              <div className="relative">
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-full max-w-[340px] sm:max-w-[420px] lg:max-w-[500px] group">
                 <div className="absolute inset-0 bg-white/20 rounded-3xl blur-xl"></div>
-                <div className="relative bg-white rounded-3xl p-2 shadow-2xl transform hover:scale-105 transition-all duration-500">
+                <div className="relative bg-white rounded-3xl p-2 shadow-2xl border border-white/70 overflow-hidden transform hover:scale-105 transition-all duration-500">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBpbmRpYW4lMjBidXNpbmVzc21hbnxlbnwxfHx8fDE3NzUzODA1NDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://wsrv.nl/?url=i.ibb.co/HLyg6vG6/nana-pic.jpg&w=2160&h=2700&fit=cover&output=jpg&q=95"
                     alt={t.proprietorName}
-                    className="w-full max-w-[320px] sm:max-w-[400px] rounded-2xl shadow-xl"
+                    className="w-full aspect-[4/5] object-cover object-top rounded-2xl shadow-xl brightness-105 contrast-110 saturate-125 transition-transform duration-700 group-hover:scale-[1.03]"
                   />
+                  <div className="absolute inset-x-2 top-2 h-14 rounded-t-2xl bg-gradient-to-b from-white/20 to-transparent pointer-events-none"></div>
+                  <div className="absolute inset-x-2 bottom-2 h-24 rounded-b-2xl bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                   <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-white rounded-2xl px-5 sm:px-8 py-3 sm:py-4 shadow-2xl" style={{ backgroundColor: '#43A047' }}>
                     <p className="text-white text-sm sm:text-lg">20+ Years</p>
                   </div>
